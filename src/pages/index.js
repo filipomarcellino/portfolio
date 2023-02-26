@@ -22,7 +22,7 @@ export default function Home() {
           <link rel="icon" href="/f.svg" />
         </Head>
         <main className="max-w-2xl mx-auto">
-          <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black px-8 py-10 mb-12">
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black px-8 py-10 mb-6">
             <nav className="flex justify-between text-black dark:text-white mb-2">
               <h1 className="text-xl">Filipo's portfolio</h1>
               <ul className="flex items-center">
@@ -75,8 +75,6 @@ export default function Home() {
                 displayDataTypes={false}
               />
             </div>
-          </section>
-          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
             <p className="mt-4 text-md text-gray-800 dark:text-gray-400">
               Best way to reach me is through
               <span className="font-bold italic text-stone-600 dark:text-golden">
@@ -84,7 +82,7 @@ export default function Home() {
                 email
               </span>
             </p>
-            <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-200">
+            <div className="text-4xl flex gap-4 py-3 text-gray-600 dark:text-gray-200">
               <a href="http://github.com/filipomarcellino">
                 <AiFillGithub />
               </a>
@@ -96,17 +94,17 @@ export default function Home() {
               </a>
             </div>
           </section>
-          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
-            <h1 className="tracking-widest dark:text-golden w-11/12 mx-auto font-semibold text-xl">
-              WORK EXPERIENCE
+          <section className="bg-zinc-200 dark:bg-[#2c2f33]  rounded-lg border-black py-4 mb-6">
+            <h1 className=" dark:text-golden w-11/12 mx-auto font-semibold text-xl">
+              Work experience
             </h1>
             {EXPERIENCES.map((project) => (
               <ExperienceToggle data={project} />
             ))}
           </section>
-          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4">
-            <h1 className="tracking-widest dark:text-golden w-11/12 mx-auto font-semibold text-xl">
-              PROJECTS
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black py-4">
+            <h1 className=" dark:text-golden w-11/12 mx-auto font-semibold text-xl">
+              Projects
             </h1>
             {PROJECTS.map((project, index) => (
               <ProjectToggle
