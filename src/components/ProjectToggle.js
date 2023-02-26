@@ -23,10 +23,6 @@ function ProjectToggle(props) {
         >
           <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-golden font-semibold">
             {data.name}{" "}
-            <span className="italic text-black dark:text-white font-light">
-              {" "}
-              - {data.subHeader}
-            </span>
           </div>
           {show ? (
             <AiOutlineUpCircle className="mt-2 mr-4 text-3xl" />

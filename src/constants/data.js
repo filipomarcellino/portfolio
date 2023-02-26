@@ -38,7 +38,6 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     name: "SFU reddit clone",
-    subHeader: "web application",
     description:
       "A reddit clone (recreation of the webpage reddit.com) for SFU students",
     stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
@@ -50,7 +49,6 @@ export const PROJECTS = [
   },
   {
     name: "Pikko",
-    subHeader: "web application",
     description:
       "Pikko is an E-commerce web application (fullstack) that enables customers to easily purchase salad bowls using paypal or cash on delivery.",
     stack: ["Next.js", "Javascript", "MongoDB", "ReactRedux", "Tailwind"],
@@ -62,7 +60,6 @@ export const PROJECTS = [
   },
   {
     name: "Splittr",
-    subHeader: "web application",
     description:
       "Splittr is a web application that allows users to track bills and other shared expenses, paying with stripe",
     stack: ["React.js", "Node.js", "PostgreSQL", "Javascript"],
@@ -72,7 +69,6 @@ export const PROJECTS = [
   },
   {
     name: "Package Deliveries Tracker",
-    subHeader: "Java swing application",
     description:
       "A package deliveries tracker to store packages information and show the packages based on its status (All, Overdue, Upcoming). The packages information is stored in the server and uses Spring to fetches/ updates the data. The component is separated with MVC (Model-View-Controller) architecture to ensure code is readable and understandable. Received full grade in the last iteration.",
     stack: ["Java", "Java Swing", "Spring", "GSON"],
@@ -82,7 +78,6 @@ export const PROJECTS = [
   },
   {
     name: "SFU Indonesian Association website",
-    subHeader: "web application",
     description:
       "Simon Fraser University Indonesian Association’s website acts as the information hub for Indonesian students at SFU.",
     stack: ["Next.js", "Javascript", "Bootstrap"],
