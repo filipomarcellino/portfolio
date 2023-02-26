@@ -11,24 +11,19 @@ import "react-slidedown/lib/slidedown.css";
 import StackItem from "./StackItem";
 
 function Toggle(props) {
-  const { data, theme } = props;
+  const { data } = props;
   const [show, setShow] = useState(true);
 
-  const iconStyle = {
-    color: "white",
-    marginLeft: "3px"
-  };
-
   return (
-    <div className="mt-3 text-gray-200">
-      <div className="bg-[#393c43] w-11/12 rounded-lg mx-auto">
+    <div className="mt-3 text-black dark:text-gray-200">
+      <div className="bg-stone-300 dark:bg-[#393c43] w-11/12 rounded-lg mx-auto">
         <div
           className="flex justify-between cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <div className="text-left px-3 py-2 text-lg text-golden font-semibold">
+          <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-golden font-semibold">
             {data.name}{" "}
-            <span className="italic text-white font-light">
+            <span className="italic text-black dark:text-white font-light">
               {" "}
               - {data.subHeader}
             </span>
@@ -54,7 +49,7 @@ function Toggle(props) {
               <div className="flex justify-between text-4xl mt-4">
                 <div className="flex">
                   {data.stack.map((stackItem) => (
-                    <StackItem stack={stackItem} theme={theme} />
+                    <StackItem stack={stackItem} />
                   ))}
                 </div>
                 <div className="flex">

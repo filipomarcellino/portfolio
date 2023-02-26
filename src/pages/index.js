@@ -21,7 +21,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className="max-w-2xl mx-auto pt-10">
-          <section className="dark:bg-[#2c2f33] rounded-lg border-black px-8 py-10 mb-12">
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black px-8 py-10 mb-12">
             <nav className="flex justify-between text-black dark:text-white mb-2">
               <h1 className="font-burtons text-xl">Filipo's portfolio</h1>
               <ul className="flex items-center">
@@ -41,7 +41,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <h3 className="mb-3 italic py-2 dark:text-golden text-xl">
+            <h3 className="mb-3 italic py-2 text-stone-600 dark:text-golden text-xl">
               <TypeAnimation
                 sequence={[
                   "Hi! I'm Filipo", // Types 'One'
@@ -74,10 +74,10 @@ export default function Home() {
               />
             </div>
           </section>
-          <section className="dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
             <p className="mt-4 text-md text-gray-800 dark:text-gray-400">
               Best way to reach me is through
-              <span className="font-bold italic text-golden"> email</span>
+              <span className="font-bold italic text-stone-600 dark:text-golden"> email</span>
             </p>
             <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-200">
               <a href="http://github.com/filipomarcellino">
@@ -91,17 +91,17 @@ export default function Home() {
               </a>
             </div>
           </section>
-          <section className="dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
             <h1 className=" dark:text-gray-200 w-11/12 mx-auto font-semibold text-xl underline underline-offset-4">
               Work Experience
             </h1>
           </section>
-          <section className="dark:bg-[#2c2f33] text-center rounded-lg border-black py-4">
+          <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4">
             <h1 className=" dark:text-gray-200 w-11/12 mx-auto font-semibold text-xl underline underline-offset-4">
               Projects
             </h1>
             {PROJECTS.map((project) => (
-              <Toggle data={project} theme={darkMode} />
+              <Toggle data={project}/>
             ))}
           </section>
 
