@@ -42,12 +42,14 @@ function Toggle(props) {
         <SlideDown>
           {show ? (
             <div className="p-8 pt-4 text-left">
-              <Image
-                className="rounded-lg"
-                src={data.imageURL}
-                height={800}
-                width={800}
-              />
+              {data.imageURL && (
+                <Image
+                  className="rounded-lg"
+                  src={data.imageURL}
+                  height={800}
+                  width={800}
+                />
+              )}
               <p className="mt-4">{data.description}</p>
               <div className="flex justify-between text-4xl mt-4">
                 <div className="flex">
@@ -60,10 +62,11 @@ function Toggle(props) {
                     {" "}
                     <AiFillGithub className="mr-2" />
                   </a>
-                  <a href={data.links.link}>
-                  <AiOutlineLink />
-
-                  </a>
+                  {data.links.link && (
+                    <a href={data.links.link}>
+                      <AiOutlineLink />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

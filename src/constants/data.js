@@ -20,12 +20,26 @@ export const BIO_INFO = {
   interests: ["anime", "movies"]
 };
 
+export const EXPERIENCES = [
+  {
+    name: "Langara Computer Science TA",
+    description:
+      "A reddit clone (recreation of the webpage reddit.com) for SFU students",
+    stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
+    imageURL: "/sfure.png",
+    links: {
+      github: "https://github.com/filipomarcellino/sfure",
+      link: "https://sfure.vercel.app"
+    }
+  }
+];
+
 export const PROJECTS = [
   {
     name: "SFU reddit clone",
     subHeader: "web application",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "A reddit clone (recreation of the webpage reddit.com) for SFU students",
     stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
     imageURL: "/sfure.png",
     links: {
@@ -36,19 +50,45 @@ export const PROJECTS = [
   {
     name: "Pikko",
     subHeader: "web application",
-    description: "",
-    stack: [
-      "Firestore",
-      "Vision API",
-      "Firebase Functions",
-      "flutter",
-      "dart",
-      "Voiceflow"
-    ],
+    description:
+      "Pikko is an E-commerce web application (fullstack) that enables customers to easily purchase salad bowls using paypal or cash on delivery.",
+    stack: ["Next.js", "Javascript", "MongoDB", "ReactRedux", "Tailwind"],
+    imageURL: "/pikko.png",
     links: {
-      github: "https://github.com/dchen150/recipe-suggester",
-      linkify: "https://devpost.com/software/wish-a-dish-m9eshg",
-      youtube: "https://www.youtube.com/watch?v=Eo_uqGk7HHk"
+      github: "https://github.com/filipomarcellino/pikko",
+      link: "https://pikko.vercel.app"
+    }
+  },
+  {
+    name: "Splittr",
+    subHeader: "web application",
+    description:
+      "Splittr is a web application that allows users to track bills and other shared expenses, paying with stripe",
+    stack: ["React.js", "Node.js", "PostgreSQL", "Javascript"],
+    links: {
+      github: "https://github.com/filipomarcellino/splittr"
+    }
+  },
+  {
+    name: "Package Deliveries Tracker",
+    subHeader: "Java swing application",
+    description:
+      "A package deliveries tracker to store packages information and show the packages based on its status (All, Overdue, Upcoming). The packages information is stored in the server and uses Spring to fetches/ updates the data. The component is separated with MVC (Model-View-Controller) architecture to ensure code is readable and understandable. Received full grade in the last iteration.",
+    stack: ["Java", "Java Swing", "Spring", "GSON"],
+    links: {
+      github: "https://github.com/filipomarcellino/splittr"
+    }
+  },
+  {
+    name: "SFU Indonesian Association website",
+    subHeader: "web application",
+    description:
+      "Pikko is an E-commerce web application (fullstack) that enables customers to easily purchase salad bowls using paypal or cash on delivery.",
+    stack: ["Next.js", "Javascript", "MongoDB", "ReactRedux", "Tailwind"],
+    imageURL: "/pikko.png",
+    links: {
+      github: "https://github.com/filipomarcellino/pikko",
+      link: "https://pikko.vercel.app"
     }
   }
 ];
