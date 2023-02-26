@@ -20,7 +20,7 @@ function ExperienceToggle({ data }) {
           className="flex justify-between cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-golden font-semibold">
+          <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-gray-200 font-light">
             {data.employer}{" "}
           </div>
           {show ? (
@@ -33,7 +33,7 @@ function ExperienceToggle({ data }) {
           {show ? (
             <div className="border-t-2 mt-2 border-black dark:border-gray-200 p-8 pt-6 text-left">
               <div className="flex justify-between">
-                <div className="flex gap-3">
+                <div className="flex gap-3 shrink-0">
                   {data.logo && (
                     <Image
                       className="rounded-lg"
@@ -44,10 +44,10 @@ function ExperienceToggle({ data }) {
                   )}
                   <div>
                     <h2>{data.employer}</h2>
-                    <p>{data.position}</p>
+                    <p className="flex flex-wrap">{data.position}</p>
                   </div>
                 </div>
-                <p className="italic">{data.date}</p>
+                <p className="italic hidden md:flex">{data.date}</p>
               </div>
               <ul className="ml-4 list-disc">
                 {data.accomplishments.map((item) => (

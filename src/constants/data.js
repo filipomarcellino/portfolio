@@ -6,24 +6,18 @@ export const BIO_INFO = {
   location: "Vancouver, BC, Canada",
   contact: {
     email: "fmarcellino7@gmail.com",
-    github: "github.com/filipomarcellino",
-    linkedin: "linkedin.com/in/filipomarcellino",
-    instagram: "www.instagram.com/filipomarcellino"
+    github: "github.com / filipomarcellino",
+    linkedin: "linkedin.com /in/ filipomarcellino",
+    instagram: "www.instagram.com / filipomarcellino"
   },
-  hobbies: [
-    "soccer || futsal",
-    "gym",
-    "volleyball",
-    "badminton",
-    "table tennis"
-  ],
+  hobbies: ["soccer", "gym", "volleyball", "badminton", "table tennis"],
   interests: ["anime", "movies"]
 };
 
 export const EXPERIENCES = [
   {
     employer: "Langara College",
-    position: "Computer Science Teaching Assistant",
+    position: "CS Teaching Assistant",
     date: "May 2022 - Current",
     accomplishments: [
       "Offers individualized computer science tutoring for first and second-year courses, resulting in increased understanding and success among students",

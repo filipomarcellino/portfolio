@@ -21,7 +21,7 @@ function ProjectToggle(props) {
           className="flex justify-between cursor-pointer"
           onClick={() => setShow(!show)}
         >
-          <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-golden font-semibold">
+          <div className="text-left px-3 py-2 text-lg text-stone-700 dark:text-gray-200 font-light">
             {data.name}{" "}
           </div>
           {show ? (

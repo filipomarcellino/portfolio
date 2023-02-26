@@ -97,16 +97,16 @@ export default function Home() {
             </div>
           </section>
           <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
-            <h1 className=" dark:text-gray-200 w-11/12 mx-auto font-semibold text-xl underline underline-offset-4">
-              Work Experience
+            <h1 className="tracking-widest dark:text-golden w-11/12 mx-auto font-semibold text-xl">
+              WORK EXPERIENCE
             </h1>
             {EXPERIENCES.map((project) => (
               <ExperienceToggle data={project} />
             ))}
           </section>
           <section className="bg-zinc-200 dark:bg-[#2c2f33] text-center rounded-lg border-black py-4">
-            <h1 className=" dark:text-gray-200 w-11/12 mx-auto font-semibold text-xl underline underline-offset-4">
-              Projects
+            <h1 className="tracking-widest dark:text-golden w-11/12 mx-auto font-semibold text-xl">
+              PROJECTS
             </h1>
             {PROJECTS.map((project, index) => (
               <ProjectToggle
