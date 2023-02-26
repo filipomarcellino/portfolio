@@ -1,21 +1,12 @@
+import Toggle from "@/components/Toggle";
 import { BIO_INFO } from "@/constants/data";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
-import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
-import design from "../../public/design.png";
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
-import web3 from "../../public/web3.png";
-import web4 from "../../public/web4.png";
-import web5 from "../../public/web5.png";
-import web6 from "../../public/web6.png";
+import { PROJECTS } from "@/constants/data";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -49,7 +40,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <h3 className="mb-3 italic py-2 dark:text-gray-400 text-xl">
+            <h3 className="mb-3 italic py-2 dark:text-golden text-xl">
               <TypeAnimation
                 sequence={[
                   "Hi! I'm Filipo", // Types 'One'
@@ -83,26 +74,28 @@ export default function Home() {
           <section className="dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
             <p className="mt-4 text-md text-gray-800 dark:text-gray-400">
               Best way to react me is through
-              <span className="font-bold italic"> email</span>
+              <span className="font-bold italic text-golden"> email</span>
             </p>
             <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-200">
-              <a href="http://github.com/filipomarcellino"><AiFillGithub /></a>
-              <a href="http://linkedin.com/in/filipomarcellino"><AiFillLinkedin /></a>
-              <a href="mailto:fmarcellino7@gmail.com"><AiFillMail /></a>
+              <a href="http://github.com/filipomarcellino">
+                <AiFillGithub />
+              </a>
+              <a href="http://linkedin.com/in/filipomarcellino">
+                <AiFillLinkedin />
+              </a>
+              <a href="mailto:fmarcellino7@gmail.com">
+                <AiFillMail />
+              </a>
             </div>
           </section>
           <section className="dark:bg-[#2c2f33] text-center rounded-lg border-black py-4 mb-12">
-            <p className="mt-4 text-md text-gray-800 dark:text-gray-400">
-              Best way to react me is through
-              <span className="font-bold italic"> email</span>
-            </p>
-            <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-200">
-              <a href="http://github.com/filipomarcellino"><AiFillGithub /></a>
-              <a href="http://linkedin.com/in/filipomarcellino"><AiFillLinkedin /></a>
-              <a href="mailto:fmarcellino7@gmail.com"><AiFillMail /></a>
-            </div>
+            <h1 className=" dark:text-gray-200 w-11/12 mx-auto font-semibold text-xl underline underline-offset-4">
+              Projects
+            </h1>
+            {PROJECTS.map((project) => (
+              <Toggle data={project} theme={darkMode} />
+            ))}
           </section>
-
         </main>
       </div>
     </div>
