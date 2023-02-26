@@ -10,9 +10,9 @@ import SlideDown from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import StackItem from "./StackItem";
 
-function Toggle(props) {
-  const { data } = props;
-  const [show, setShow] = useState(true);
+function ProjectToggle(props) {
+  const { data, showOnLoad } = props;
+  const [show, setShow] = useState(showOnLoad);
 
   return (
     <div className="mt-3 text-black dark:text-gray-200">
@@ -36,7 +36,7 @@ function Toggle(props) {
         </div>
         <SlideDown>
           {show ? (
-            <div className="p-8 pt-4 text-left">
+            <div className="border-t-2 mt-2 border-black dark:border-gray-200 p-8 pt-6 text-left">
               {data.imageURL && (
                 <Image
                   className="rounded-lg"
@@ -46,16 +46,16 @@ function Toggle(props) {
                 />
               )}
               <p className="mt-4">{data.description}</p>
-              <div className="flex justify-between text-4xl mt-4">
-                <div className="flex">
+              <div className="flex flex-wrap gap-2 justify-between text-4xl mt-4">
+                <div className="flex gap-3 flex-wrap">
                   {data.stack.map((stackItem) => (
                     <StackItem stack={stackItem} />
                   ))}
                 </div>
-                <div className="flex">
+                <div className="flex gap-2 flex-wrap">
                   <a href={data.links.github}>
                     {" "}
-                    <AiFillGithub className="mr-2" />
+                    <AiFillGithub />
                   </a>
                   {data.links.link && (
                     <a href={data.links.link}>
@@ -74,4 +74,4 @@ function Toggle(props) {
   );
 }
 
-export default Toggle;
+export default ProjectToggle;
