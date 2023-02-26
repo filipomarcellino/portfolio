@@ -64,7 +64,7 @@ export default function Home() {
                 deletionSpeed={75}
               />
             </h3>
-            <div className="text-base">
+            <div className="text-xs sm:text-sm md:text-base">
               <DynamicReactJson
                 src={BIO_INFO}
                 theme={darkMode ? "eighties" : "rjv-default"}

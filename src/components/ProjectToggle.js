@@ -41,9 +41,9 @@ function ProjectToggle(props) {
                   width={800}
                 />
               )}
-              <p className="mt-4">{data.description}</p>
+              <p className="mt-4 text-sm md:text-base">{data.description}</p>
               <div className="flex flex-wrap gap-2 justify-between text-4xl mt-4">
-                <div className="flex gap-3 flex-wrap">
+                <div className="flex gap-1 md:gap-3 flex-wrap">
                   {data.stack.map((stackItem) => (
                     <StackItem stack={stackItem} />
                   ))}

@@ -49,7 +49,7 @@ function ExperienceToggle({ data }) {
                 </div>
                 <p className="italic hidden md:flex">{data.date}</p>
               </div>
-              <ul className="ml-4 list-disc">
+              <ul className="ml-4 list-disc text-sm md:text-base">
                 {data.accomplishments.map((item) => (
                   <li className="mt-4">{item}</li>
                 ))}
