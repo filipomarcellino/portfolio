@@ -31,14 +31,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    name: "SFU reddit clone",
+    name: "SFU Forum",
     description:
-      "A reddit clone (recreation of the webpage reddit.com) for SFU students",
+      "SFU Forum is a web-based discussion platform designed for Simon Fraser University students to communicate and collaborate on course assignments, projects, and general course-related topics. The platform aims to facilitate a supportive and engaging learning environment for SFU students by enabling them to ask questions, share ideas, and connect with their peers.",
     stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
-    imageURL: "/sfure.png",
+    imageURL: "/sfuforum.png",
     links: {
-      github: "https://github.com/filipomarcellino/sfure",
-      link: "https://sfure.vercel.app"
+      github: "https://github.com/filipomarcellino/sfuforum",
+      link: "https://sfuforum.vercel.app"
     }
   },
   {
@@ -50,6 +50,17 @@ export const PROJECTS = [
     links: {
       github: "https://github.com/filipomarcellino/pikko",
       link: "https://pikko.vercel.app"
+    }
+  },
+  {
+    name: "SFU Indonesian Association website",
+    description:
+      "Simon Fraser University Indonesian Association’s website acts as the information hub for Indonesian students at SFU.",
+    stack: ["Next.js", "Javascript", "Bootstrap"],
+    imageURL: "/sfuia.png",
+    links: {
+      github: "https://github.com/sfuia/sfuia-website",
+      link: "https://sfuia.com"
     }
   },
   {
@@ -68,17 +79,6 @@ export const PROJECTS = [
     stack: ["Java", "Java Swing", "Spring", "GSON"],
     links: {
       github: "https://github.com/filipomarcellino/splittr"
-    }
-  },
-  {
-    name: "SFU Indonesian Association website",
-    description:
-      "Simon Fraser University Indonesian Association’s website acts as the information hub for Indonesian students at SFU.",
-    stack: ["Next.js", "Javascript", "Bootstrap"],
-    imageURL: "/sfuia.png",
-    links: {
-      github: "https://github.com/sfuia/sfuia-website",
-      link: "https://sfuia.com"
     }
   }
 ];
