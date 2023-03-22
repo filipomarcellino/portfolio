@@ -49,7 +49,8 @@ export const PROJECTS = [
     imageURL: "/pikko.png",
     links: {
       github: "https://github.com/filipomarcellino/pikko",
-      link: "https://pikko.vercel.app"
+      link: "https://pikko.vercel.app",
+      youtube: "https://www.youtube.com/watch?v=zIOUnQCT6Tc"
     }
   },
   {

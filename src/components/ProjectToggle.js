@@ -4,7 +4,8 @@ import {
   AiFillGithub,
   AiOutlineDownCircle,
   AiOutlineLink,
-  AiOutlineUpCircle
+  AiOutlineUpCircle,
+  AiOutlineYoutube
 } from "react-icons/ai";
 import SlideDown from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
@@ -56,6 +57,11 @@ function ProjectToggle(props) {
                   {data.links.link && (
                     <a href={data.links.link}>
                       <AiOutlineLink />
+                    </a>
+                  )}
+                  {data.links.youtube && (
+                    <a href={data.links.youtube}>
+                      <AiOutlineYoutube />
                     </a>
                   )}
                 </div>
