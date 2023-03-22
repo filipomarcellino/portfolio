@@ -38,7 +38,8 @@ export const PROJECTS = [
     imageURL: "/sfuforum.png",
     links: {
       github: "https://github.com/filipomarcellino/sfuforum",
-      link: "https://sfuforum.vercel.app"
+      link: "https://sfuforum.vercel.app",
+      youtube: "https://www.youtube.com/watch?v=zIOUnQCT6Tc"
     }
   },
   {
@@ -50,7 +51,6 @@ export const PROJECTS = [
     links: {
       github: "https://github.com/filipomarcellino/pikko",
       link: "https://pikko.vercel.app",
-      youtube: "https://www.youtube.com/watch?v=zIOUnQCT6Tc"
     }
   },
   {
