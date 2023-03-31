@@ -10,8 +10,8 @@ export const BIO_INFO = {
     linkedin: "linkedin.com /in/ filipomarcellino",
     instagram: "www.instagram.com / filipomarcellino"
   },
-  hobbies: ["soccer", "gym", "volleyball", "badminton", "table tennis"],
-  interests: ["anime", "movies"]
+  hobbies: ["soccer/football", "powerlifting", "volleyball", "badminton", "table tennis"],
+  interests: ["highly-rated anime", "movies with heavy plot", "billie eilish's voice", "edgy tv shows", "good outfits", "exercising in nature", "spontaneous late-night activites", "oreos", "jam sessions"]
 };
 
 export const EXPERIENCES = [
