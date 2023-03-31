@@ -10,8 +10,26 @@ export const BIO_INFO = {
     linkedin: "linkedin.com /in/ filipomarcellino",
     instagram: "www.instagram.com / filipomarcellino"
   },
-  hobbies: ["soccer/football", "powerlifting", "volleyball", "badminton", "table tennis"],
-  interests: ["highly-rated anime", "movies with heavy plot", "billie eilish's voice", "edgy tv shows", "good outfits", "exercising in nature", "spontaneous late-night activites", "oreos", "jam sessions"]
+  hobbies: [
+    "soccer/football",
+    "powerlifting",
+    "volleyball",
+    "badminton",
+    "table tennis",
+    "snowboarding"
+  ],
+  interests: [
+    "highly-rated anime",
+    "movies with heavy plot",
+    "billie eilish's voice",
+    "edgy tv shows",
+    "good outfits",
+    "exercising in nature",
+    "spontaneous late-night activites",
+    "oreos",
+    "jam sessions",
+    "playboy carti"
+  ]
 };
 
 export const EXPERIENCES = [
@@ -50,7 +68,7 @@ export const PROJECTS = [
     imageURL: "/pikko.png",
     links: {
       github: "https://github.com/filipomarcellino/pikko",
-      link: "https://pikko.vercel.app",
+      link: "https://pikko.vercel.app"
     }
   },
   {
