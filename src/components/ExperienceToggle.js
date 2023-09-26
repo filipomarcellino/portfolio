@@ -34,14 +34,12 @@ function ExperienceToggle({ data, darkMode }) {
             <div className="border-t-2 mt-2 border-black dark:border-gray-200 p-8 pt-6 text-left">
               <div className="flex justify-between">
                 <div className="flex gap-3 shrink-0">
-                  {data.logo && (
                     <Image
                       className="rounded-lg"
-                      src={data.logo}
+                      src={darkMode ? data.darkLogo : data.lightLogo}
                       height={50}
                       width={50}
                     />
-                  )}
                   <div>
                     <h2>{data.employer}</h2>
                     <p className="flex flex-wrap">{data.position}</p>

@@ -99,7 +99,7 @@ export default function Home() {
               Work experience
             </h1>
             {EXPERIENCES.map((job) => (
-              <ExperienceToggle key={job} data={job} darkMode />
+              <ExperienceToggle key={job} data={job} darkMode={darkMode} />
             ))}
           </section>
           <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black py-4">
