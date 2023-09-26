@@ -10,7 +10,7 @@ import SlideDown from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import StackItem from "./StackItem";
 
-function ExperienceToggle({ data }) {
+function ExperienceToggle({ data, darkMode }) {
   const [show, setShow] = useState(true);
 
   return (
@@ -51,13 +51,13 @@ function ExperienceToggle({ data }) {
               </div>
               <ul className="ml-4 list-disc text-sm md:text-base">
                 {data.accomplishments.map((item) => (
-                  <li className="mt-4">{item}</li>
+                  <li key={item} className="mt-4">{item}</li>
                 ))}
               </ul>
               <div className="flex flex-wrap justify-between text-4xl mt-4">
                 <div className="flex flex-wrap gap-3">
-                  {data.stack.map((stackItem) => (
-                    <StackItem stack={stackItem} />
+                  {data.stack.map((stackItem, index) => (
+                    <StackItem key={index} stack={stackItem} />
                   ))}
                 </div>
               </div>

@@ -34,6 +34,19 @@ export const BIO_INFO = {
 
 export const EXPERIENCES = [
   {
+    employer: "Aquanow",
+    position: "CS Teaching Assistant",
+    date: "May 2022 - Current",
+    accomplishments: [
+      "Offers individualized computer science tutoring for first and second-year courses, resulting in increased understanding and success among students",
+      "Collaborates with multiple instructors to provide support for computer science course materials",
+      "Marks 80+ programming assignments every week and provides timely, detailed feedback to students"
+    ],
+    stack: ["Java", "C++", "Python", "C", "OOP", "SOLID"],
+    lightLogo: "/aquanowLight.png",
+    darkLogo: "/aquanowDark.png"
+  },
+  {
     employer: "Langara College",
     position: "CS Teaching Assistant",
     date: "May 2022 - Current",
@@ -43,7 +56,8 @@ export const EXPERIENCES = [
       "Marks 80+ programming assignments every week and provides timely, detailed feedback to students"
     ],
     stack: ["Java", "C++", "Python", "C", "OOP", "SOLID"],
-    logo: "/langara.png"
+    lightLogo: "/langara.png",
+    darkLogo: "/langara.png"
   }
 ];
 

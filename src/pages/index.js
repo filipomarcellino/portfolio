@@ -35,7 +35,7 @@ export default function Home() {
                 <li>
                   <a
                     className="bg-green-700 text-white px-4 py-2 border-none rounded-lg ml-8"
-                    href="/resume_ver_7.pdf"
+                    href="/resume.pdf"
                     target="_blank"
                   >
                     Resume
@@ -98,8 +98,8 @@ export default function Home() {
             <h1 className=" dark:text-golden w-11/12 mx-auto font-semibold text-xl">
               Work experience
             </h1>
-            {EXPERIENCES.map((project) => (
-              <ExperienceToggle data={project} />
+            {EXPERIENCES.map((job) => (
+              <ExperienceToggle key={job} data={job} darkMode />
             ))}
           </section>
           <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black py-4">
@@ -108,6 +108,7 @@ export default function Home() {
             </h1>
             {PROJECTS.map((project, index) => (
               <ProjectToggle
+                  key={index}
                 data={project}
                 showOnLoad={index == 0 || index == 1 ? true : false}
               />
