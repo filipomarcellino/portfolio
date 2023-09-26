@@ -98,8 +98,9 @@ export default function Home() {
             <h1 className=" dark:text-golden w-11/12 mx-auto font-semibold text-xl">
               Work experience
             </h1>
-            {EXPERIENCES.map((job) => (
-              <ExperienceToggle key={job} data={job} darkMode={darkMode} />
+            {EXPERIENCES.map((job, index) => (
+              <ExperienceToggle key={index} data={job} darkMode={darkMode} showOnLoad={index === 0}
+               />
             ))}
           </section>
           <section className="bg-zinc-200 dark:bg-[#2c2f33] rounded-lg border-black py-4">
@@ -110,7 +111,7 @@ export default function Home() {
               <ProjectToggle
                   key={index}
                 data={project}
-                showOnLoad={index == 0 || index == 1 ? true : false}
+                showOnLoad={index === 0}
               />
             ))}
           </section>

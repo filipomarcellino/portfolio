@@ -1,17 +1,15 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import {
-  AiFillGithub,
   AiOutlineDownCircle,
-  AiOutlineLink,
   AiOutlineUpCircle
 } from "react-icons/ai";
 import SlideDown from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import StackItem from "./StackItem";
 
-function ExperienceToggle({ data, darkMode }) {
-  const [show, setShow] = useState(true);
+function ExperienceToggle({ data, darkMode, showOnLoad }) {
+  const [show, setShow] = useState(showOnLoad);
 
   return (
     <div className="mt-3 text-black dark:text-gray-200">

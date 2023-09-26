@@ -1,5 +1,3 @@
-import { LocaleRouteMatcher } from "next/dist/server/future/route-matchers/locale-route-matcher";
-
 export const BIO_INFO = {
   name: "Filipo Marcellino",
   about: "software systems @ SFU || CS TA @ Langara",
@@ -35,12 +33,14 @@ export const BIO_INFO = {
 export const EXPERIENCES = [
   {
     employer: "Aquanow",
-    position: "CS Teaching Assistant",
-    date: "May 2022 - Current",
+    position: "Software Engineer Intern",
+    date: "May 2023 - Current",
     accomplishments: [
-      "Offers individualized computer science tutoring for first and second-year courses, resulting in increased understanding and success among students",
-      "Collaborates with multiple instructors to provide support for computer science course materials",
-      "Marks 80+ programming assignments every week and provides timely, detailed feedback to students"
+      "Collaborated with a team to deliver TypeScript-driven back-end features for Aquanow’s trading platform",
+      "Deployed efficient REST API endpoints to an AWS Lambda function, facilitating the streamlined creation update, and deletion of records in DynamoDB tables",
+      "Pioneered back-end lambda integration testing using Cucumber, adapting Behavior-Driven Development methods that reduced bugs and increased team productivity",
+      "Leveraged AJV schema for strict input validation, enhancing data integrity and error handling",
+      "Delivered tailored front-end modifications, utilizing React and Material UI"
     ],
     stack: ["Java", "C++", "Python", "C", "OOP", "SOLID"],
     lightLogo: "/aquanowLight.png",
@@ -49,7 +49,7 @@ export const EXPERIENCES = [
   {
     employer: "Langara College",
     position: "CS Teaching Assistant",
-    date: "May 2022 - Current",
+    date: "May 2022 - May 2023",
     accomplishments: [
       "Offers individualized computer science tutoring for first and second-year courses, resulting in increased understanding and success among students",
       "Collaborates with multiple instructors to provide support for computer science course materials",
