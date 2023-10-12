@@ -42,7 +42,7 @@ export const EXPERIENCES = [
       "Leveraged AJV schema for strict input validation, enhancing data integrity and error handling",
       "Delivered tailored front-end modifications, utilizing React and Material UI"
     ],
-    stack: ["Java", "C++", "Python", "C", "OOP", "SOLID"],
+    stack: ["AWS", "Typescript", "Node.js", "Cucumber.js"],
     lightLogo: "/aquanowLight.png",
     darkLogo: "/aquanowDark.png"
   },
@@ -63,15 +63,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    name: "SFU Forum",
+    name: "PERMIKA association website",
     description:
-      "SFU Forum is a web-based discussion platform designed for Simon Fraser University students to communicate and collaborate on course assignments, projects, and general course-related topics. The platform aims to facilitate a supportive and engaging learning environment for SFU students by enabling them to ask questions, share ideas, and connect with their peers.",
-    stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
-    imageURL: "/sfuforum.png",
+      "Collaborated with a designer and another developer to build a hub for Indonesian students in Vancouver",
+    stack: ["Typescript", "React.js", "Tailwind", "Figma"],
+    imageURL: "/permika.png",
     links: {
-      github: "https://github.com/filipomarcellino/sfuforum",
-      link: "https://sfuforum.vercel.app",
-      youtube: "https://www.youtube.com/watch?v=zIOUnQCT6Tc"
+      github: "https://github.com/PERMIKA-Vancouver/PERMIKA_Vancouver",
+      link: "https://permikavancouver.com",
     }
   },
   {
