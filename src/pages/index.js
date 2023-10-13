@@ -42,7 +42,7 @@ export default function Home() {
                 <li>
                   <a
                     className="bg-green-700 text-white px-4 py-2 border-none rounded-lg ml-8"
-                    href="/resume.pdf"
+                    href="/resume_new.pdf"
                     target="_blank"
                   >
                     Resume
