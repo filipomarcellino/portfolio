@@ -30,7 +30,7 @@ export default function Home() {
                        height={90}
                        alt="Picture of the author"
                 />
-                <h1 className="my-auto text-2xl ml-4">Filipo's Portfolio</h1>
+                <h1 className="my-auto hidden md:block text-2xl ml-4">Filipo's Portfolio</h1>
               </div>
               <ul className="flex items-center">
                 <li>
