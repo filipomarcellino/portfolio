@@ -73,6 +73,18 @@ export const PROJECTS = [
     }
   },
   {
+    name: "SFU Forum",
+    description:
+        "SFU Forum is a web-based discussion platform designed for Simon Fraser University students to communicate and collaborate on course assignments, projects, and general course-related topics. The platform aims to facilitate a supportive and engaging learning environment for SFU students by enabling them to ask questions, share ideas, and connect with their peers.",
+    stack: ["Typescript", "Next.js", "Firebase", "Recoil", "Chakra UI"],
+    imageURL: "/sfuforum.png",
+    links: {
+      github: "https://github.com/filipomarcellino/sfuforum",
+      link: "https://sfuforum.vercel.app",
+      youtube: "https://www.youtube.com/watch?v=zIOUnQCT6Tc"
+    }
+  },
+  {
     name: "Pikko",
     description:
       "Pikko is an E-commerce web application (fullstack) that enables customers to easily purchase salad bowls using paypal or cash on delivery.",
