@@ -2,7 +2,7 @@ import ProjectToggle from "@/components/ProjectToggle";
 import {BIO_INFO, EXPERIENCES, PROJECTS} from "@/constants/data";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {AiFillGithub, AiFillLinkedin, AiFillMail} from "react-icons/ai";
 import {BsFillMoonStarsFill} from "react-icons/bs";
 import {TypeAnimation} from "react-type-animation";
@@ -12,6 +12,17 @@ import Image from "next/image";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  //useEffect's purpose is to set the background on the body level, to fix the bounce effect showing default background
+  useEffect(() => {
+    if (darkMode) {
+      document.body.style.backgroundColor = '#202225'; // dark theme color
+    } else {
+      document.body.style.backgroundColor = '#FFFBF5'; // light theme color
+    }
+    return () => {
+      document.body.style.backgroundColor = ''; // Reset to default
+    };
+  }, [darkMode]);
   const DynamicReactJson = dynamic(import("react-json-view"), { ssr: false });
   return (
     <div className={darkMode ? "dark" : ""}>
