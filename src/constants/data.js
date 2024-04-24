@@ -8,7 +8,7 @@ export const BIO_INFO = {
     instagram: "www.instagram.com / filipomarcellino"
   },
   hobbies: [
-    "soccer/football",
+    "bouldering",
     "powerlifting",
     "volleyball",
     "badminton",

@@ -66,13 +66,13 @@ export default function Home() {
                 sequence={[
                   "Hi! I'm Filipo", // Types 'One'
                   3000, // Waits 1s
-                  "Hi! I'm a software engineer @aquanow", // Types 'One'
-                  3000, // Waits 1s
                   "Hi! I'm a software systems student @ SFU", // Deletes 'One' and types 'Two'
                   3000, // Waits 2s
-                  "Hi! I'm a hopeful cloud architect!", // Types 'Three' without deleting 'Two'
+                  "Hi! I'm an ex-software engineer intern @ Aquanow", // Types 'Three' without deleting 'Two'
                   3000,
-                  "Hi! I'm a competitive powerlifter", // Types 'Three' without deleting 'Two'
+                  "Hi! I like solving leetcode problems" // Types 'Three' without deleting 'Two'
+                  3000,
+                  "Hi! I'm an avid wall climber" // Types 'Three' without deleting 'Two'
                   3000,
                   () => {
                     console.log("Done typing!"); // Place optional callbacks anywhere in the array
